@@ -214,7 +214,7 @@
 
 <body class="mode-simple"> <!-- 初期状態は簡易モード -->
 
-    <h1>🀄 仲間内麻雀 ルール設定メーカー</h1>
+    <h1>🀄 今日の卓ルールメーカー</h1>
 
     <div class="container">
         <!-- 左側：設定パネル -->
@@ -243,6 +243,7 @@
                 <select id="game-type" onchange="updatePreview()">
                     <option value="東風戦">東風戦</option>
                     <option value="東南戦（半荘）">東南戦（半荘）</option>
+                    <option value="都度決め">都度決め</option>
                 </select>
             </div>
 
@@ -308,7 +309,7 @@
                 </label>
             </div>
 
-            <!-- 新規追加：花牌（詳細のみ） -->
+            <!-- 花牌（詳細のみ） -->
             <div class="form-group detailed-only">
                 <span>花牌</span>
                 <label class="switch">
@@ -317,7 +318,7 @@
                 </label>
             </div>
 
-            <!-- 新規追加：ローカル役（詳細のみ） -->
+            <!-- ローカル役（詳細のみ） -->
             <div class="form-group column-layout detailed-only">
                 <span>採用するローカル役</span>
                 <div class="checkbox-group">
@@ -394,7 +395,7 @@
             <div class="form-group detailed-only" id="cheat-penalty-group" style="background-color: #fff5f5; border-radius: 8px; padding: 12px; margin-top: -10px;">
                 <span style="color: #c53030;">イカサマ発覚時の対応</span>
                 <select id="cheat-penalty" onchange="updatePreview()">
-                    <option value="ノーカン（やり直し）">ノーカン（やり直し）</option>
+                    <option value="ノーカン!ノーカン!">ノーカン!ノーカン!</option>
                     <option value="チョンボ扱い">チョンボ扱い</option>
                     <option value="出禁">出禁</option>
                     <option value="一週間口きかない">一週間口きかない</option>
@@ -428,7 +429,7 @@
                 <div class="rule-item detailed-only"><span>点数異議申立時間:</span> <span class="rule-val" id="out-objection-time">無制限</span></div>
                 <div class="rule-item detailed-only"><span>申告時間超過時:</span> <span class="rule-val" id="out-timeover-action">ノーカン（やり直し）</span></div>
                 <div class="rule-item detailed-only" style="color: #c53030;"><span>イカサマ:</span> <span class="rule-val" id="out-cheat" style="color: #c53030;">厳禁</span></div>
-                <div class="rule-item detailed-only" id="out-cheat-penalty-row" style="color: #c53030;"><span>イカサマ発覚時:</span> <span class="rule-val" id="out-cheat-penalty" style="color: #c53030;">ノーカン（やり直し）</span></div>
+                <div class="rule-item detailed-only" id="out-cheat-penalty-row" style="color: #c53030;"><span>イカサマ発覚時:</span> <span class="rule-val" id="out-cheat-penalty" style="color: #c53030;">ノーカン!ノーカン!</span></div>
                 
                 <p style="text-align:center; font-size: 0.9rem; margin-top: 20px; color: #718096;">
                     楽しくワイワイ打ちましょう！
