@@ -1,6 +1,7 @@
 # 麻雀ルールメーカー
 
-静的な 1 ページ構成の Web アプリです。GitHub Pages でそのまま公開できます。
+静的な 1 ページ構成の Web アプリです。
+公開ページ：https://gomi-kuzu.github.io/jong_rule_maker/
 
 ## ローカル確認
 
